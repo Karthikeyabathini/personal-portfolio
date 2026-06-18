@@ -1,0 +1,99 @@
+.admin-page {
+  padding-top: 132px;
+}
+
+.admin-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.admin-head h1 {
+  margin: 6px 0 0;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+}
+
+.admin-grid {
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: start;
+}
+
+.admin-form,
+.admin-list,
+.messages-panel {
+  padding: 22px;
+}
+
+.admin-form {
+  display: grid;
+  gap: 12px;
+}
+
+.admin-form h2,
+.admin-list h2,
+.messages-panel h2 {
+  margin-top: 0;
+}
+
+.admin-list-item,
+.message-item {
+  border-top: 1px solid var(--border);
+  padding: 14px 0;
+}
+
+.admin-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.admin-list-item div {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-list-item button {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  padding: 8px 10px;
+}
+
+.admin-list-item button:last-child {
+  color: var(--danger);
+}
+
+.messages-panel {
+  margin-top: 18px;
+}
+
+.message-item {
+  display: grid;
+  gap: 6px;
+}
+
+.message-item span {
+  color: var(--secondary);
+}
+
+.message-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 580px) {
+  .admin-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
